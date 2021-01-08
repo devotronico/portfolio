@@ -37,6 +37,17 @@ module.exports = {
         singleTypes: [],
       },
     },
+    {
+      resolve: `gatsby-source-strapi`,
+      options: {
+        apiURL: `http://localhost:1337`,
+        queryLimit: 1000, // Default to 100
+        // contentTypes: [`jobs`, `projects`, `blogs`, ],
+        //singleTypes:[`about` ]
+        contentTypes: [`jobs`],
+        // singleTypes: [`about`],
+      },
+    },
     // {
     //   resolve: `gatsby-plugin-webfonts`,
     //   options: {
